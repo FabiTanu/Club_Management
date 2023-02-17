@@ -39,3 +39,6 @@ const categoriesImages = [
   imgcl10,
   imgcl11
 ];
+
+const profileButtonList = [orders, wishlist, message];
+const profileButtonIcon = [icOrder, icOrders, icMessages];

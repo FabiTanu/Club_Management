@@ -5,3 +5,4 @@ export './styles.dart';
 export 'package:velocity_x/velocity_x.dart';
 export 'package:flutter/material.dart';
 export './constants.dart';
+export './firebase_constant.dart';

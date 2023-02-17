@@ -13,15 +13,15 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   //creating a method to change screen
   changeScreen() {
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 5), () {
       //using GetX
-      Get.to(() => OnboardingScreen());
+      Get.to(() => const OnboardingScreen());
     });
   }
 
   @override
   void initState() {
-    // TODO: implement initState
+    
     changeScreen();
     super.initState();
   }
@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
             appname.text.fontFamily(bold).white.size(22).make(),
             5.heightBox,
             appversion.text.white.make(),
-            Spacer(),
+            const Spacer(),
             credits.text.white.fontFamily(semibold).make(),
             30.heightBox,
 

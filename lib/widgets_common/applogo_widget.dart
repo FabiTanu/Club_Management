@@ -7,7 +7,7 @@ Widget applogoWidget() {
       .white
       .size(90, 90)
       .padding(
-        EdgeInsets.all(8),
+        const EdgeInsets.all(8),
       )
       .rounded
       .make();

@@ -1,6 +1,7 @@
 import 'package:club_management_flutter/consts/consts.dart';
 import 'package:club_management_flutter/consts/lists.dart';
 import 'package:club_management_flutter/views/auth_Screen_Dart/signup_screen.dart';
+import 'package:club_management_flutter/views/home_Screen/home.dart';
 import 'package:club_management_flutter/widgets_common/applogo_widget.dart';
 import 'package:club_management_flutter/widgets_common/bg_widget.dart';
 import 'package:club_management_flutter/widgets_common/custom_textfield.dart';
@@ -36,15 +37,12 @@ class LoginScreen extends StatelessWidget {
                   // ourButton().box.width(context.screenWidth-50).make(),
 
                   ourButton(
-                          color: redColor,
-                          title: login,
-                          textColor: whiteColor,
-                          onPress: () {
-                            //Get.to(() => const Home());
-                          })
-                      .box
-                      .width(context.screenWidth - 50)
-                      .make(),
+                      color: redColor,
+                      title: login,
+                      textColor: whiteColor,
+                      onPress: () {
+                        Get.to(() => const Home());
+                      }).box.width(context.screenWidth - 50).make(),
                   5.heightBox,
                   createNewAccount.text.color(fontGrey).make(),
                   5.heightBox,

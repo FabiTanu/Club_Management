@@ -131,7 +131,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   .box
                   .white
                   .rounded
-                  .padding(EdgeInsets.all(16.0))
+                  .padding(const EdgeInsets.all(16.0))
                   .shadowSm
                   .width(context.screenWidth - 70)
                   .make(),

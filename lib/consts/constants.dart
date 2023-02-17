@@ -6,9 +6,9 @@ class Constants {
   static var blackColor = Colors.black54;
 
   //onboarding texts
-  static var titleOne = "Learn more about plants.";
+  static var titleOne = "Welcome to Leading University";
   static var descriptionOne =
-      "Read how to care for plants in our rich plants guide.";
+      "LU is a private university of Bangladesh. It was established in 2001 under the Private University Act 1992.";
   static var titleTwo = "Find a plant lover friend.";
   static var descriptionTwo =
       "Are you a plant lover? Connect with other plant lover.";

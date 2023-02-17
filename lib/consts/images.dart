@@ -2,6 +2,20 @@
 
 const imAppLogo = "assets/images/LU_Logo.png";
 const imfontpage = "assets/images/leadingUniversity.jpg";
+const icSplashBg2 = "assets/images2/1.jpg";
+const imgBackground2 = "assets/images2/2.jpg";
+//club
+const imgcl1 = "assets/images2/Computerclub.jpg";
+const imgcl2 = "assets/images2/Socialservise.jpg";
+const imgcl3 = "assets/images2/elect.jpg";
+const imgcl4 = "assets/images2/cultural.jpg";
+const imgcl5 = "assets/images2/debating.jpg";
+const imgcl6 = "assets/images2/lumuna.jpg";
+const imgcl7 = "assets/images2/bncc.jpg";
+const imgcl8 = "assets/images2/sports.jpg";
+const imgcl9 = "assets/images2/photo.jpg";
+const imgcl10 = "assets/images2/orphus.jpg";
+const imgcl11 = "assets/images2/banned.jpg";
 
 //icons
 const icAdd = "assets/icons/add.png";

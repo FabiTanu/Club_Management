@@ -14,23 +14,28 @@ const featuredTitles1 = [womenDress, girlsDress, girlsWatches];
 const featuredTitles2 = [boysGlasses, mobilePhone, tshirts];
 
 const categoriesList = [
-  womenClothing,
-  menClothingFashion,
-  compAccess,
-  automobile,
-  kidtoys,
-  sports,
-  jewelery,
-  cellphone,
-  furniture
+  computerClub,
+  socialServiceClub,
+  electronicClub,
+  culturalClub,
+  debatingClub,
+  lumuna,
+  bncc,
+  sportsClub,
+  photographic,
+  orpheus,
+  banned
 ];
 const categoriesImages = [
-  imgFc1,
-  imgFc2,
-  imgFc4,
-  imgFc5,
-  imgFc6,
-  imgFc3,
-  imgFc7,
-  imgFc8,
+  imgcl1,
+  imgcl2,
+  imgcl3,
+  imgcl4,
+  imgcl5,
+  imgcl6,
+  imgcl7,
+  imgcl8,
+  imgcl9,
+  imgcl10,
+  imgcl11
 ];

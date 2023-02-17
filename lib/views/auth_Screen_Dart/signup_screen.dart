@@ -36,7 +36,8 @@ class _SignupScreenState extends State<SignupScreen> {
                   Align(
                       alignment: Alignment.centerRight,
                       child: TextButton(
-                          onPressed: () {}, child: forgetPass.text.make())),
+                          onPressed: () {},
+                          child: forgetPass.text.red600.make())),
                   5.heightBox,
                   // ourButton().box.width(context.screenWidth-50).make(),
 
@@ -90,7 +91,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   10.heightBox,
                   ourButton(
-                          color: isCheck == true ? redColor : lightGrey,
+                          color: isCheck == true ? splashcolor : lightGrey,
                           title: signup,
                           textColor: whiteColor,
                           onPress: () {})

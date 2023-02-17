@@ -39,7 +39,6 @@ const searchanything = "Searchanything...",
     featuredProduct = "Featured Product",
     featuredCategories = "Featured Categories";
 
-    
 //categories strings
 const womenClothing = "Women Clothing",
     menClothingFashion = "men Clothing Fashion",
@@ -51,6 +50,19 @@ const womenClothing = "Women Clothing",
     cellphone = "Cellphone & Tab",
     furniture = "Furniture";
 
+//categories string
+const computerClub = "Computer Club",
+    socialServiceClub = "Social Service Club",
+    electronicClub = "Electronic Club",
+    culturalClub = "Cultural Club",
+    debatingClub = "Debating Club",
+    lumuna = "Model United Nation",
+    bncc = "BNCC",
+    sportsClub = "Sports Club",
+    photographic = "Photographic Society",
+    orpheus = "ORPHEUS",
+    banned = "Banned Community";
+
 //items details string
 const vedio = "Vedio",
     reviews = "Reviews",
@@ -61,4 +73,3 @@ const vedio = "Vedio",
 
 //profile strings
 const wishlist = "My Wishlist", orders = "My Orders", message = "Messages";
-

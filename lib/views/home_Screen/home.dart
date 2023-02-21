@@ -1,6 +1,7 @@
 import 'package:club_management_flutter/consts/consts.dart';
 import 'package:club_management_flutter/controllers/home_controller.dart';
 import 'package:club_management_flutter/views/category_screen/category_screen.dart';
+import 'package:club_management_flutter/views/category_screen/category_screen2.dart';
 import 'package:club_management_flutter/views/home_Screen/home_screen.dart';
 import 'package:club_management_flutter/views/profile_screen/profile_screen.dart';
 import 'package:get/get.dart';
@@ -36,7 +37,7 @@ class Home extends StatelessWidget {
 
     var navBody = [
       const HomeScreen(),
-      const CategoryScreen(),
+      const CategoryScreen2(),
 
       const ProfileScreen(),
 

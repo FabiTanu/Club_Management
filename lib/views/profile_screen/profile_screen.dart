@@ -33,7 +33,7 @@ class ProfileScreen extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  imgProfile2,
+                  imgProfile,
                   width: 100,
                   fit: BoxFit.cover,
                 ).box.roundedFull.clip(Clip.antiAlias).make(),
@@ -42,15 +42,18 @@ class ProfileScreen extends StatelessWidget {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    "Dummy User".text.fontFamily(semibold).white.make(),
+                    "Fabiha Akter".text.fontFamily(semibold).white.make(),
                     5.heightBox,
-                    "customer@example.com".text.white.make(),
+                    "Fabihaakter1999@gmail.com".text.white.make(),
                   ],
                 )),
                 OutlinedButton(
                     style: OutlinedButton.styleFrom(
                         side: const BorderSide(color: whiteColor)),
-                    onPressed: () {},
+                    onPressed: () async {
+                      await Get.put(AuthController()).signoutMethod(context);
+                      Get.offAll(() => const LoginScreen());
+                    },
                     child: logout.text.fontFamily(semibold).white.make())
               ],
             ),
@@ -60,16 +63,16 @@ class ProfileScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               detailsCard(
-                  count: "00",
-                  title: "in your cart",
+                  count: "15",
+                  title: "Total Visits",
                   width: context.screenWidth / 3.4),
               detailsCard(
                   count: "32",
-                  title: "in your whishlist",
+                  title: "Unique Users",
                   width: context.screenWidth / 3.4),
               detailsCard(
                   count: "67",
-                  title: " your orders",
+                  title: " Total Tap",
                   width: context.screenWidth / 3.4),
             ],
           ),

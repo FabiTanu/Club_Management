@@ -1,5 +1,6 @@
 import 'package:club_management_flutter/consts/consts.dart';
 import 'package:club_management_flutter/consts/lists.dart';
+import 'package:club_management_flutter/controllers/auth_controller.dart';
 import 'package:club_management_flutter/views/auth_Screen_Dart/signup_screen.dart';
 import 'package:club_management_flutter/views/home_Screen/home.dart';
 import 'package:club_management_flutter/widgets_common/applogo_widget.dart';
@@ -13,6 +14,8 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var controller = Get.put(AuthController());
+
     return bgWidget(
         child: Padding(
       padding: const EdgeInsets.all(20.0),
@@ -27,9 +30,16 @@ class LoginScreen extends StatelessWidget {
               15.heightBox,
               Column(
                 children: [
-                  customTextField(title: email, hint: emailHint, isPass: false),
                   customTextField(
-                      hint: passwordHint, title: password, isPass: true),
+                      title: email,
+                      hint: emailHint,
+                      isPass: false,
+                      controller: controller.emailController),
+                  customTextField(
+                      hint: passwordHint,
+                      title: password,
+                      isPass: true,
+                      controller: controller.passwordController),
                   Align(
                       alignment: Alignment.centerRight,
                       child: TextButton(
@@ -39,12 +49,25 @@ class LoginScreen extends StatelessWidget {
                   // ourButton().box.width(context.screenWidth-50).make(),
 
                   ourButton(
-                      color: splashcolor,
-                      title: login,
-                      textColor: whiteColor,
-                      onPress: () {
-                        Get.to(() => const Home());
-                      }).box.width(context.screenWidth - 50).make(),
+                    color: splashcolor,
+                    title: login,
+                    textColor: whiteColor,
+                    //onPress: (){}
+                    onPress: () {
+                      Get.to(() => const Home());
+                    },
+
+                    // onPress: () async {
+                    //   await controller
+                    //       .loginMethod(context: context)
+                    //       .then((value) {
+                    //     if (value != null) {
+                    //       VxToast.show(context, msg: loggedin);
+                    //       Get.offAll(() => const Home());
+                    //     }
+                    //   });
+                    // },
+                  ).box.width(context.screenWidth - 50).make(),
                   5.heightBox,
                   createNewAccount.text.color(fontGrey).make(),
                   5.heightBox,
@@ -92,4 +115,8 @@ class LoginScreen extends StatelessWidget {
       ),
     ));
   }
+
+  // Future<void> login() async{
+  //   await FirebaseAuth.instance.signInWithEmailAndPassword(email: emailc, password: password)
+  // }
 }

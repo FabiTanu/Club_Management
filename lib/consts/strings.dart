@@ -1,6 +1,6 @@
 const appname = "LU Club";
 const appversion = "Version 1.0.0";
-const credits = "@Tanuful";
+const credits = "@Fab.Poly ";
 const email = "Email";
 const emailHint = "admin@admin.com";
 const password = "Password";
@@ -32,9 +32,9 @@ const searchanything = "Searchanything...",
     topSeller = "Top Seller",
     brand = "Brand",
     topCategories = "Top Categories",
-    womenDress = "Women Dress",
-    girlsWatches = "Girls Watch",
-    girlsDress = "GirlsDress",
+    womenDress = "Girls Jersy",
+    girlsWatches = "Cricket Jersy",
+    girlsDress = "Football Jersy",
     mobilePhone = "Mobile Phone",
     boysGlasses = "Boys Glasses",
     tshirts = "TShirts",
@@ -74,4 +74,4 @@ const vedio = "Vedio",
     productyoumaylike = "Products you may also like";
 
 //profile strings
-const wishlist = "My Wishlist", orders = "My Orders", message = "Messages";
+const wishlist = "My Wishlist", orders = "About Us", message = "Messages";

@@ -31,7 +31,19 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          10.heightBox,
+          20.heightBox,
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration:
+                const BoxDecoration(color: Color.fromRGBO(186, 201, 91, 1)),
+            child: "Welcome! To Leading University Club"
+                .text
+                .black
+                .fontFamily(bold)
+                .size(18)
+                .make(),
+          ),
+          20.heightBox,
           Expanded(
             child: SingleChildScrollView(
               physics: const BouncingScrollPhysics(),
@@ -40,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                   //Swipers brands
                   VxSwiper.builder(
                       aspectRatio: 16 / 9,
-                      height: 150,
+                      height: 200,
                       autoPlay: true,
                       enlargeCenterPage: true,
                       itemCount: slidersList.length,
@@ -65,14 +77,14 @@ class HomeScreen extends StatelessWidget {
                             height: context.screenHeight * 0.15,
                             width: context.screenWidth / 2.5,
                             icon: index == 0 ? icTodaysDeal : icFlashDeal,
-                            title: index == 0 ? todayDeal : flashSale)),
+                            title: index == 0 ? "Upcoming Event" : "Events")),
                   ),
                   10.heightBox,
 
                   //2nd Swipers brands
                   VxSwiper.builder(
                       aspectRatio: 16 / 9,
-                      height: 150,
+                      height: 200,
                       autoPlay: true,
                       enlargeCenterPage: true,
                       itemCount: secondSlidersList.length,
@@ -106,7 +118,7 @@ class HomeScreen extends StatelessWidget {
                                   ? topCategories
                                   : index == 1
                                       ? brand
-                                      : topSeller,
+                                      : "TopUsers",
                             )),
                   ),
 
@@ -133,9 +145,9 @@ class HomeScreen extends StatelessWidget {
                                 icon: featuredImages1[index],
                                 title: featuredTitles1[index]),
                             10.heightBox,
-                            featuredButton(
-                                icon: featuredImages2[index],
-                                title: featuredTitles2[index]),
+                            // featuredButton(
+                            //     icon: featuredImages2[index],
+                            //     title: featuredTitles2[index]),
                           ],
                         ),
                       ).toList(),
@@ -152,32 +164,29 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        featuredProduct.text.white
-                            .fontFamily(bold)
-                            .size(18)
-                            .make(),
+                        "Events".text.white.fontFamily(bold).size(18).make(),
                         10.heightBox,
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
                             children: List.generate(
-                              6,
+                              11,
                               (index) => Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Image.asset(
-                                    imgP1,
+                                    thirdSlidersList[index],
                                     width: 150,
                                     fit: BoxFit.cover,
                                   ),
                                   10.heightBox,
-                                  "Laptop 4GB/64GB"
+                                  eventName[index]
                                       .text
                                       .fontFamily(semibold)
                                       .color(darkFontGrey)
                                       .make(),
                                   10.heightBox,
-                                  "\$600"
+                                  eventPrice[index]
                                       .text
                                       .color(redColor)
                                       .fontFamily(bold)
@@ -203,7 +212,7 @@ class HomeScreen extends StatelessWidget {
                   //third swiper
                   VxSwiper.builder(
                       aspectRatio: 16 / 9,
-                      height: 150,
+                      height: 200,
                       autoPlay: true,
                       enlargeCenterPage: true,
                       itemCount: secondSlidersList.length,
@@ -221,49 +230,49 @@ class HomeScreen extends StatelessWidget {
 
                   //All product section
                   20.heightBox,
-                  GridView.builder(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      itemCount: 6,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              mainAxisSpacing: 8,
-                              crossAxisSpacing: 8,
-                              mainAxisExtent: 300),
-                      itemBuilder: (context, index) {
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              imgP5,
-                              height: 200,
-                              width: 200,
-                              fit: BoxFit.cover,
-                            ),
-                            //10.heightBox,
-                            const Spacer(),
-                            "Laptop 4GB/64GB"
-                                .text
-                                .fontFamily(semibold)
-                                .color(darkFontGrey)
-                                .make(),
-                            10.heightBox,
-                            "\$600"
-                                .text
-                                .color(redColor)
-                                .fontFamily(bold)
-                                .size(16)
-                                .make(),
-                          ],
-                        )
-                            .box
-                            .white
-                            .roundedSM
-                            .margin(const EdgeInsets.symmetric(horizontal: 4))
-                            .padding(const EdgeInsets.all(12))
-                            .make();
-                      })
+                  // GridView.builder(
+                  //     physics: const NeverScrollableScrollPhysics(),
+                  //     shrinkWrap: true,
+                  //     itemCount: 6,
+                  //     gridDelegate:
+                  //         const SliverGridDelegateWithFixedCrossAxisCount(
+                  //             crossAxisCount: 2,
+                  //             mainAxisSpacing: 8,
+                  //             crossAxisSpacing: 8,
+                  //             mainAxisExtent: 300),
+                  //     itemBuilder: (context, index) {
+                  //       return Column(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Image.asset(
+                  //             imgP5,
+                  //             height: 200,
+                  //             width: 200,
+                  //             fit: BoxFit.cover,
+                  //           ),
+                  //           //10.heightBox,
+                  //           const Spacer(),
+                  //           "Laptop 4GB/64GB"
+                  //               .text
+                  //               .fontFamily(semibold)
+                  //               .color(darkFontGrey)
+                  //               .make(),
+                  //           10.heightBox,
+                  //           "\$600"
+                  //               .text
+                  //               .color(redColor)
+                  //               .fontFamily(bold)
+                  //               .size(16)
+                  //               .make(),
+                  //         ],
+                  //       )
+                  //           .box
+                  //           .white
+                  //           .roundedSM
+                  //           .margin(const EdgeInsets.symmetric(horizontal: 4))
+                  //           .padding(const EdgeInsets.all(12))
+                  //           .make();
+                  //     })
                 ],
               ),
             ),

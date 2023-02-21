@@ -16,6 +16,31 @@ const imgcl8 = "assets/images2/sports.jpg";
 const imgcl9 = "assets/images2/photo.jpg";
 const imgcl10 = "assets/images2/orphus.jpg";
 const imgcl11 = "assets/images2/banned.jpg";
+const t1 = "assets/images2/t1.jpg";
+const t2 = "assets/images2/t2.jpg";
+const t3 = "assets/images2/t3.jpg";
+const t4 = "assets/images2/t4.jpg";
+const t5 = "assets/images2/t5.jpg";
+const t6 = "assets/images2/t6.jpg";
+const t7 = "assets/images2/t7.jpg";
+const t8 = "assets/images2/t8.jpg";
+const t9 = "assets/images2/t9.jpg";
+const t10 = "assets/images2/t10.jpg";
+const t11 = "assets/images2/t11.jpg";
+
+const a1 = "assets/images2/a1.jpg";
+const a2 = "assets/images2/a2.jpg";
+const a3 = "assets/images2/a3.jpg";
+const a4 = "assets/images2/a4.jpg";
+const a5 = "assets/images2/a5.jpg";
+const a6 = "assets/images2/a6.jpg";
+const a7 = "assets/images2/a7.jpg";
+const a8 = "assets/images2/a8.jpg";
+const a9 = "assets/images2/a9.jpg";
+const a10 = "assets/images2/a10.jpg";
+const a11 = "assets/images2/a11.jpg";
+
+const imgProfile = "assets/images2/tanu.jpg";
 
 //icons
 const icAdd = "assets/icons/add.png";
@@ -119,7 +144,7 @@ const imgPi3 = "assets/images/pi3.jpg";
 const imgPi4 = "assets/images/pi4.jpg";
 const imgPi5 = "assets/images/pi5.jpg";
 const imgProfile2 = "assets/images/profile_image_joya_ahsan.jpg";
-const imgProfile = "assets/images/profile_image.png";
+
 const imgRavePayment = "assets/images/rave_payment.png";
 const imgRozarpay = "assets/images/rozarpay.png";
 const imgS1 = "assets/images/s1.jpg";

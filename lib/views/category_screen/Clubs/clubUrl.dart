@@ -1,0 +1,11 @@
+export './computerClub.dart';
+export './socialServiceClub.dart';
+export './electronicClub.dart';
+export './culturalClub.dart';
+export './debatingClub.dart';
+export './lumuna.dart';
+export './bncc.dart';
+export './sportsClub.dart';
+export './photographicClub.dart';
+export './orpheus.dart';
+export './banned.dart';

@@ -55,7 +55,7 @@ class CategoryScreen2 extends StatelessWidget {
                     .make()
                     .onTap(
                   () {
-                    Get.to(() => const Category1());
+                    Get.to(() => const ComputerClub());
                     // Get.to(() => CategoryDetails(title: categoriesList[index]));
                     // Get.to(() {
                     //   const Category1();
@@ -405,6 +405,7 @@ class CategoryScreen2 extends StatelessWidget {
                   },
                 ),
               ),
+              //Banned Community
               Container(
                 child: Column(
                   children: [
@@ -435,7 +436,7 @@ class CategoryScreen2 extends StatelessWidget {
                     .make()
                     .onTap(
                   () {
-                    Get.to(() => const Category2());
+                    Get.to(() => const BannedCom());
                     // Get.to(() => CategoryDetails(title: categoriesList[index]));
                     // Get.to(() {
                     //   const Category1();

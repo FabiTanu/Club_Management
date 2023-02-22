@@ -32,23 +32,23 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           20.heightBox,
-          Container(
-            padding: const EdgeInsets.all(12),
-            decoration:
-                const BoxDecoration(color: Color.fromRGBO(186, 201, 91, 1)),
-            child: "Welcome! To Leading University Club"
-                .text
-                .black
-                .fontFamily(bold)
-                .size(18)
-                .make(),
-          ),
-          20.heightBox,
           Expanded(
             child: SingleChildScrollView(
               physics: const BouncingScrollPhysics(),
               child: Column(
                 children: [
+                  Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(186, 201, 91, 1)),
+                    child: "Welcome! To Leading University Club"
+                        .text
+                        .black
+                        .fontFamily(bold)
+                        .size(18)
+                        .make(),
+                  ),
+                  20.heightBox,
                   //Swipers brands
                   VxSwiper.builder(
                       aspectRatio: 16 / 9,

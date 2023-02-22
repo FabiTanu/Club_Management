@@ -14,6 +14,7 @@ Widget customTextField({String? title, String? hint, controller, isPass}) {
             fontFamily: semibold,
             color: textFieldGrey,
           ),
+          
           hintText: hint,
           isDense: true,
           fillColor: lightGrey,
@@ -23,6 +24,7 @@ Widget customTextField({String? title, String? hint, controller, isPass}) {
             borderSide: BorderSide(color: redColor),
           ),
         ),
+        
       ),
       5.heightBox,
     ],

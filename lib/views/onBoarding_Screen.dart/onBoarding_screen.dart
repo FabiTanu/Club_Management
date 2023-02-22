@@ -183,11 +183,11 @@ class createPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            height: 350,
+            height: 300,
             child: Image.asset(image),
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           Text(
             //Constants.titleOne,
@@ -200,14 +200,14 @@ class createPage extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           Text(
             //Constants.descriptionOne,
             description,
             textAlign: TextAlign.center,
             style: const TextStyle(
-              fontSize: 20,
+              fontSize: 15,
               fontWeight: FontWeight.w400,
               color: Colors.grey,
             ),

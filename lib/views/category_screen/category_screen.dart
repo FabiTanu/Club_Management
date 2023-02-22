@@ -13,7 +13,7 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var controll = Get.put(HomeController());
-    var probro = [const Category1(), const Category2()];
+    var probro = [const ComputerClub(), const Category2()];
     return bkWidget(
         child: Scaffold(
       appBar: AppBar(

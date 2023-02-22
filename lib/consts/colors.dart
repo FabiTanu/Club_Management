@@ -8,3 +8,4 @@ const Color lightGrey = Color.fromRGBO(239, 239, 239, 1);
 const Color redColor = Color.fromRGBO(230, 46, 4, 1);
 const Color lightGolden = Color.fromRGBO(240, 230, 114, 1);
 const Color splashcolor = Color.fromRGBO(77, 30, 188, 1);
+const Color bannedColor = Color.fromRGBO(163, 21, 21, 1);

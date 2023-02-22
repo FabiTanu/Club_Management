@@ -16,6 +16,7 @@ const slidersList = [
   imgcl10,
   imgcl11
 ];
+const bannedSlideList = [b1,b2,b3];
 
 const secondSlidersList = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11];
 const thirdSlidersList = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11];

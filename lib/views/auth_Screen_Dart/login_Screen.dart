@@ -20,6 +20,7 @@ class LoginScreen extends StatelessWidget {
         child: Padding(
       padding: const EdgeInsets.all(20.0),
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: Center(
           child: Column(
             children: [
@@ -31,10 +32,13 @@ class LoginScreen extends StatelessWidget {
               Column(
                 children: [
                   customTextField(
+                    
                       title: email,
                       hint: emailHint,
                       isPass: false,
-                      controller: controller.emailController),
+                      controller: controller.emailController, ),
+                      
+                      
                   customTextField(
                       hint: passwordHint,
                       title: password,

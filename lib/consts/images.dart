@@ -1,6 +1,8 @@
 //imagesfor club
 
 const imAppLogo = "assets/images/LU_Logo.png";
+const lulogo = "assets/images2/lupng.png";
+const lulogo2 = "assets/images2/luuu.jpg";
 const imfontpage = "assets/images/leadingUniversity.jpg";
 const icSplashBg2 = "assets/images2/1.jpg";
 const imgBackground2 = "assets/images2/2.jpg";
@@ -39,6 +41,11 @@ const a8 = "assets/images2/a8.jpg";
 const a9 = "assets/images2/a9.jpg";
 const a10 = "assets/images2/a10.jpg";
 const a11 = "assets/images2/a11.jpg";
+
+const b1 = "assets/images2/b1.jpg";
+const b2 = "assets/images2/b2.jpg";
+const b3 = "assets/images2/b3.jpg";
+const b100 = "assets/images2/b100.jpg";
 
 const imgProfile = "assets/images2/tanu.jpg";
 

@@ -1,20 +1,3 @@
-// class OnBoardingScreen extends StatefulWidget {
-//   const OnBoardingScreen({super.key});
-
-//   @override
-//   State<OnBoardingScreen> createState() => _OnBoardingScreenState();
-// }
-
-// class _OnBoardingScreenState extends State<OnBoardingScreen> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text("OnBoading Screen"),
-//       ),
-//     );
-//   }
-// }
 
 import 'package:club_management_flutter/consts/consts.dart';
 import 'package:club_management_flutter/views/auth_Screen_Dart/login_Screen.dart';

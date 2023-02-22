@@ -32,18 +32,18 @@ class LoginScreen extends StatelessWidget {
               Column(
                 children: [
                   customTextField(
-                    
-                      title: email,
-                      hint: emailHint,
-                      isPass: false,
-                      controller: controller.emailController, ),
-                      
-                      
+                    title: email,
+                    hint: emailHint,
+                    isPass: false,
+                    controller: controller.emailController,
+                  ),
+
                   customTextField(
                       hint: passwordHint,
                       title: password,
                       isPass: true,
                       controller: controller.passwordController),
+
                   Align(
                       alignment: Alignment.centerRight,
                       child: TextButton(
@@ -56,7 +56,7 @@ class LoginScreen extends StatelessWidget {
                     color: splashcolor,
                     title: login,
                     textColor: whiteColor,
-                    //onPress: (){}
+
                     onPress: () {
                       Get.to(() => const Home());
                     },
